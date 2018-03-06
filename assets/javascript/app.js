@@ -13,12 +13,12 @@ var questions = [{
     question: "In which state does Ben and Jerry's Company operate?",
     answers: ["New York", "Vermont", "California", "Texas"],
     correctAnswer: "Vermont", 
-    image:".."
+    image: src = "..assets/images/vermont.jpg"
 }, {
     question: "Which flavor of icecream was the first in existence?",
     answers: ["Vanilla", "Chocolate", "Strawberry/Cherry", "Honey"],
     correctAnswer: "Strawberry/Cherry",
-    inmage: ".."
+    image: src = "../images/strawberry.jpg"
 }, {
     question: "Which company created the flavor Bunny Tracks?",
     answers: ["Haagen Daas", "Blue Bunny", "Dryers", "Ben and Jerry's"],
@@ -69,7 +69,7 @@ var game = {
     }
 
 },
-//create function that will populate 
+//create function that create html section to add in question data
 loadQuestion: function(){
     timer = setInterval(game.countdown, 1000);
     quiz.html("<h2>" + questions[this.currentQuestion].question + "</h2>" );
@@ -84,6 +84,8 @@ nextQuestion: function(){
     game.loadQuestion();
 
 },
+
+//time up function defines what happens when user runs out of 30 second, needs to alert user time is up and display correct answer
 timeUp: function (){
     clearInterval(timer);
     $("#counter-number").html(game.counter);
