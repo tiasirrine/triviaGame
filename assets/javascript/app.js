@@ -5,7 +5,7 @@ console.log("its working");
 var quiz = $('#quiz-area');
 // start count variable for each question
 var countStartNumber = 30;
-
+var vermont ='@Url.Content("../../assets/images/vermont.jpg")';
 
 //our question data set
 //define each questions, the possible answers, correct answer, and a picture to be displayed after answer is
@@ -13,23 +13,23 @@ var questions = [{
     question: "In which state does Ben and Jerry's Company operate?",
     answers: ["New York", "Vermont", "California", "Texas"],
     correctAnswer: "Vermont", 
-    image: src = "..assets/images/vermont.jpg"
+    image: "./assets/images/vermont.jpg"
 }, {
     question: "Which flavor of icecream was the first in existence?",
     answers: ["Vanilla", "Chocolate", "Strawberry/Cherry", "Honey"],
     correctAnswer: "Strawberry/Cherry",
-    image: src = "../images/strawberry.jpg"
+    image: "./assets/images/strawberry.jpg"
 }, {
     question: "Which company created the flavor Bunny Tracks?",
     answers: ["Haagen Daas", "Blue Bunny", "Dryers", "Ben and Jerry's"],
     correctAnswer: "Blue Bunny",
-    image: ".."
+    image: "./assets/images/bunny.jpg"
 },
 {
     question: "Which company was the first to sell Chocolate Chip Cookie Dough Icecream?",
     answers: ["Haagen Daas", "Ben and Jerry's", "Bryers", "Blue Bunny"],
     correctAnswer: "Ben and Jerry's",
-    image: ".."
+    image: "./assets/images/cookie.jpg"
 
 }];
 
